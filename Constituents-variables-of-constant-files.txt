@@ -1,11 +1,10 @@
-NO_SLAVE_NODES -> Number of instances Fog/Edge/Mist class working in parallel with the cloud class. The type of class(Fog/Edge/Mist) is based on the respective model the constant file is used with.
+Constituents of single-constant-files:
+  1. NO_SLAVE_NODES -> Number of instances Fog/Edge/Mist class working in parallel with the cloud class. The type of class(Fog/Edge/Mist) is based on the respective model the constant file is used with.
+  2. Maxtime -> runtime
+  3. S_N_x_y -> No. of sensors for sensor-type "x" for single query "y"
+  4. S_R_x_y -> Data Rate of sensors for sensor-type "x" for single query "y"
 
-Maxtime -> runtime
-S_N_x_y -> No. of sensors for sensor-type "x" for single query "y"
-
-S_R_x_y -> Data Rate of sensors for sensor-type "x" for single query "y"
-
-How to Constant files have been used:
+How Constant files have been used:
   1.Single Models
     1.Every Type of architecture model(Cloud/Fog/Edge/Mist) has been run 7 times with 7 different constant files from the respective Constant folders.
     2.Each constant file in a particular Constant folders, represents the workload parameters of the respective query number. Thus, for example - constant file 2 of the constant-fog folder represents the simulation of second query in the fog simulation model.
